@@ -1,0 +1,94 @@
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media (max-width: 600px)  { @content };
+    }
+    @if $breakpoint == phone-land {
+        @media (max-height: 600px)  { @content };
+    }
+    @if $breakpoint == tab-port {
+        @media (max-width: 900px) { @content };
+    }
+    @if $breakpoint == tab-land {
+        @media (max-width: 1200px) { @content };
+    }
+    @if $breakpoint == lg-desktop {
+        @media (min-width: 1800px) { @content };
+    }
+}
+
+:root {
+    --color-white: #fff;
+    --color-black: #000;
+
+    --color-dark-grey-1: #0C0C0C;
+    --color-dark-grey-2: #121212;
+    --color-dark-grey-3: #1c1c1c;
+
+    --color-light-grey: #878787;
+
+    --color-dark-green: #243a20;
+    --color-green: #3b7531;
+}
+
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    // scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+section {
+    overflow-x: hidden;
+}
+
+section > * {
+    opacity: 0;
+}
+
+.animate-in {
+    // transition: all 1s;
+    animation: animateIn 1s ease .5s forwards;
+}
+
+// .menu--black {
+//     background-color: var(--color-black);
+// }
+
+
+//////////////////////////////////////////
+
+.mt-2 { margin-top: 2rem; }
+
+.mb-6 { margin-bottom: 6rem; }
+
+.w-100 { width: 100% !important; }
+
+//////////////////////////////////////////
+
+

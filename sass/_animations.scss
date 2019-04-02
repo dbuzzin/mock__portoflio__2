@@ -1,0 +1,92 @@
+@keyframes logo {
+    from {
+        color:white;
+    }
+    to {
+        transform: scale(1.2);
+        color: green;
+    }
+}
+
+@keyframes fadeInHeader {
+    100% {
+        z-index: 1000;
+        opacity: 1;
+    }
+}
+
+@keyframes slideHomeScreen {
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideDownHomeScreen {
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideLeftHeading {
+    0% {
+        transform: translateX(-30%);
+    }
+    100% {
+        transform: translateX(-40%);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeftHeadingPhone {
+    0% {
+        transform: translateX(30%);
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInHeading {
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes expandSocialIcons {
+    30% {
+        opacity: 0;
+    }
+    100% {
+        margin-bottom: 3.5rem;
+        opacity: 1;
+    }
+}
+
+@keyframes scrollDownFade{
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes scrollDownCaret {
+    0% {
+        transform: translateY(-.2rem);
+    }
+    50% {
+        transform: translateY(.2rem);
+    }
+    100% {
+        transform: translateY(-.2rem);
+    }
+}
+
+@keyframes animateIn {
+    0% {
+        transform: translateY(10rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

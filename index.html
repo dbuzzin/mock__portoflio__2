@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+
+        <header class="header">
+
+            <div class="header__logo">MyLogo</div>
+
+            <a class="header__menu">
+                <span class="header__menu-text">Menu</span>
+                <span class="header__menu-icon"></span>
+            </a>
+
+            <nav class="nav">
+                <a class="nav__close" title="close">
+                    <span></span>
+                </a>
+
+                <h5 class="nav__heading">Navigation</h5>
+
+                <ul class="nav__list">
+                    <li><a data-section="home" class="nav__link scroll-to-section">Home</a></li>
+                    <li><a data-section="about" class="nav__link scroll-to-section">About</a></li>
+                    <li><a data-section="portfolio" class="nav__link scroll-to-section">Projects</a></li>
+                    <li><a data-section="contact" class="nav__link scroll-to-section">Contact</a></li>
+                </ul>
+
+                <div class="nav__social">
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>       
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-codepen"></i>
+                    </a>
+                </div>
+                
+            </nav>
+
+        </header>
+
+        <main id="home" class="home">
+
+            <div class="overlay-img"></div>
+
+            <div class="overlay-white">
+
+                
+                <h1 class="heading-main">
+
+                    <span class="heading-main__name">
+                            Danny Pearson 
+                    </span>
+
+                    Aspiring web developer with a passion for Javascript
+
+                    <span class="button-container">
+                        <a class="btn btn__stroke--white scroll-to-section" data-section="contact">Get in touch</a>
+                        <a class="btn btn__stroke--white scroll-to-section" data-section="about">Learn More</a>
+                    </span>
+                    
+
+                </h1>
+
+                
+
+            </div>
+
+            <div class="vertical-icons">
+                <a href="#" class="icon-circle">
+                    <i class="fab fa-facebook-f"></i>
+                    <span>Facebook</span>
+                </a>
+                <a href="#" class="icon-circle">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                <a href="#" class="icon-circle">
+                    <i class="fab fa-twitter"></i>
+                    <span>Twitter</span>
+                </a>
+                <a href="#" class="icon-circle">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="#" class="icon-circle">
+                    <i class="fab fa-codepen"></i>
+                    <span>CodePen</span>
+                </a>
+            </div>
+
+            <a class="scroll-down scroll-to-section" data-section="about">
+                <span class="scroll-down__caret"></span>
+                <p>Scroll Down</p>
+            </a>
+
+        </main>
+
+        <section id="about" class="about">
+
+            <h5 class="pre-heading">Well then...</h5>
+            <h2 class="about__heading section-heading">Who am I?</h2>
+
+            <p class="about__content">
+                    A web developer in the making, passionate about learning and problem solving. 
+                    Over the past couple of years, I've gained a solid understanding of various 
+                    front-end technologies such as HTML/5, CSS/3, SCSS, Javascript, jQuery and I'm beginning 
+                    to experiment with React. I'm now looking to expand my knowledge and put the 
+                    skills I've learned to good use in a professional environment. Design is an area that's
+                    new to me and I'm looking forward to sharpening my skills in upcoming projects.
+            </p>
+
+        </section>
+
+        <section class="portfolio" id="portfolio">
+
+            <h5 class="portfolio__pre-heading pre-heading">projects...</h5>
+            <h2 class="portfolio__heading section-heading">
+                What have I been working on?
+            </h2>
+
+            <div class="portfolio__wrapper">
+                <div class="img-container">
+                    <img src="images/random-user.jpg" alt="" class="img-container__img">
+                    <div class="img-container__overlay">
+                        <a title="Project Link" target="_blank" href="https://s.codepen.io/dbuzzin/debug/MxBjMR/YvAgOndaeDWA" class="img-container__link icon-circle">
+                            <i class="fas fa-link"></i>
+                        </a>
+                        <div>
+                            <h5 class="img-container__title">Random User Generator</h5>
+                            <p class="img-container__desc">
+                                An app that generates random user information making use of fetch(), Random User Generator API and modern Javascript/ES6.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-container">
+                    <img src="images/paint.jpg" alt="" class="img-container__img">
+                    <div class="img-container__overlay">
+                        <a title="Project Link" target="_blank" href="https://s.codepen.io/dbuzzin/debug/mowNdd/LDMmdPGDEmEk" class="img-container__link icon-circle">
+                            <i class="fas fa-link"></i>
+                        </a>
+                        <div>
+                            <h5 class="img-container__title">Paint Style App</h5>
+                            <p class="img-container__desc">
+                                A simple paint style app built with vanilla Javascript and HTML5 canvas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-container">
+                    <img src="images/weather.jpg" alt="" class="img-container__img">
+                    <div class="img-container__overlay">
+                        <a title="Project Link" target="_blank" href="https://s.codepen.io/dbuzzin/debug/ZPJpgw/PBrNWNLGnyXA" class="img-container__link icon-circle">
+                            <i class="fas fa-link"></i>
+                        </a>
+                        <div>
+                            <h5 class="img-container__title">Simple Weather App</h5>
+                            <p class="img-container__desc">
+                                A basic weather app built using the OpenWeatherMap API and vanilla Javascript.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-container">
+                    <img src="images/colour-game.jpg" alt="" class="img-container__img">
+                    <div class="img-container__overlay">
+                        <a title="Project Link" target="_blank" href="https://s.codepen.io/dbuzzin/debug/XyGdVa/yoAZEWebORwr" class="img-container__link icon-circle">
+                            <i class="fas fa-link"></i>
+                        </a>
+                        <div>
+                            <h5 class="img-container__title">RGB Guess the Colour Game</h5>
+                            <p class="img-container__desc">
+                                A game where you guess the colour using an RGB colour value built with vanilla javascript.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-container">
+                    <img src="images/twitch.jpg" alt="" class="img-container__img">
+                    <div class="img-container__overlay">
+                        <a title="Project Link" target="_blank" href="https://s.codepen.io/dbuzzin/debug/GMGGpP/NQkzYqJvBzbA" class="img-container__link icon-circle">
+                            <i class="fas fa-link"></i>
+                        </a>
+                        <div>
+                            <h5 class="img-container__title">Favourite Twitch.tv Channels</h5>
+                            <p class="img-container__desc">
+                                An app which lets you see the status of your favourite Twitch.tv channels, built with vanilla Javascript and the Twitch API.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-container">
+                    <img src="images/calculator.jpg" alt="" class="img-container__img">
+                    <div class="img-container__overlay">
+                        <a title="Project Link" target="_blank" href="https://s.codepen.io/dbuzzin/debug/rzwGNo/bZMQWNVjEBxA" class="img-container__link icon-circle">
+                            <i class="fas fa-link"></i>
+                        </a>
+                        <div>
+                            <h5 class="img-container__title">Basic Calculator</h5>
+                            <p class="img-container__desc">
+                                A basic calculator built with Javascript and jQuery.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="contact" id="contact">
+            <h5 class="contact__pre-heading pre-heading">So...</h5>
+            <h2 class="contact__heading section-heading">
+                Why not get in touch?
+            </h2>
+            <div class="contact-wrapper">
+                <div class="contact-wrapper__form">
+                    <h5 class="contact-wrapper__pre-heading mb-6">Send me a message</h5>
+
+                    <input type="text" placeholder="Your Name">
+                    <input type="email" placeholder="Your Email">
+                    <input type="text" placeholder="Subject">
+                    <textarea name="contactMessage" id="contactMessage" placeholder="Your Message" rows="10" cols="50" required="" aria-required="true"></textarea>
+                    <button class="btn btn--green contact-wrapper__submit">Submit</button>
+                </div>
+                <div class="contact-wrapper__info">
+                    <h5 class="contact-wrapper__pre-heading">Contact Info</h5>
+
+                    <h5 class="contact-wrapper__green-heading">Email Me At</h5>
+
+                    <p class="contact-wrapper__details">
+                        contact@myemail.co.uk
+                    </p>
+
+                    <h5 class="contact-wrapper__green-heading">Call Me At</h5>
+
+                    <p class="contact-wrapper__details">
+                        Phone: 07555 555 555 
+                        <br />
+                        Mobile: 07555 555 555
+                    </p>
+
+                    <span class="contact-wrapper__social">
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>       
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-codepen"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <span>© Copyright Danny Pearson 2019</span>
+            <span>Design adapted from <a href="https://colorlib.com/demo?theme=glint">Colorlib</a></span>
+        </footer>
+
+        <div data-section="home" class="scroll-top scroll-to-section">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+
+        <div class="reload-overlay">
+            <div class="reload-overlay__logo">MyLogo</div>
+        </div>
+        
+        <script type="text/javascript" src="js/main.js"></script>
+
+    </body>
+</html>
