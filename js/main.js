@@ -47,7 +47,7 @@ function isInView(elem) {
     let docBottom = document.documentElement.scrollTop + document.documentElement.clientHeight;
     let elemTop = elem.getBoundingClientRect().top + document.documentElement.scrollTop;
 
-    return ((elemTop + (elem.offsetHeight / 4)) <= docBottom);
+    return ((elemTop + (elem.offsetHeight / 16)) <= docBottom);
 }
 
 
